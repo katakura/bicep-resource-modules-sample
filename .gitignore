@@ -1,0 +1,6 @@
+!.gitignore
+!README.md
+tmp/
+*.zip
+*.ign
+ResourceModules*/

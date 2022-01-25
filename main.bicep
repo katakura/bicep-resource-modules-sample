@@ -55,7 +55,7 @@ var vm_nsg = [
 ]
 
 // Resource Group
-module rg '../ResourceModules/arm/Microsoft.Resources/resourceGroups/deploy.bicep' = {
+module rg 'ResourceModules/arm/Microsoft.Resources/resourceGroups/deploy.bicep' = {
   name: 'module-rg'
   params: {
     name: resourceGroupName
@@ -64,7 +64,7 @@ module rg '../ResourceModules/arm/Microsoft.Resources/resourceGroups/deploy.bice
 }
 
 // Network Security Group
-module nsg '../ResourceModules/arm/Microsoft.Network/networkSecurityGroups/deploy.bicep' = {
+module nsg 'ResourceModules/arm/Microsoft.Network/networkSecurityGroups/deploy.bicep' = {
   name: 'module-nsg'
   scope: resourceGroup(resourceGroupName)
   params: {
@@ -77,7 +77,7 @@ module nsg '../ResourceModules/arm/Microsoft.Network/networkSecurityGroups/deplo
 }
 
 // Virtual Network
-module vnet '../ResourceModules/arm/Microsoft.Network/virtualNetworks/deploy.bicep' = {
+module vnet 'ResourceModules/arm/Microsoft.Network/virtualNetworks/deploy.bicep' = {
   name: 'module-vnet'
   scope: resourceGroup(resourceGroupName)
   params: {
@@ -92,7 +92,7 @@ module vnet '../ResourceModules/arm/Microsoft.Network/virtualNetworks/deploy.bic
 }
 
 // Virtual Machine
-module vm '../ResourceModules/arm/Microsoft.Compute/virtualMachines/deploy.bicep' = {
+module vm 'ResourceModules/arm/Microsoft.Compute/virtualMachines/deploy.bicep' = {
   name: 'module_vm'
   scope: resourceGroup(resourceGroupName)
   params: {

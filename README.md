@@ -1,4 +1,5 @@
 # bicep-resource-modules-sample
+
 Sample code for Azure ResourceModules (https://github.com/Azure/ResourceModules)
 
 ## Steps
@@ -8,12 +9,6 @@ Sample code for Azure ResourceModules (https://github.com/Azure/ResourceModules)
 ```bash
 $ mkdir ~/bicep-resource-modules
 $ cd ~/bicep-resource-modules
-```
-
-### clone from ResourceModules
-
-```bash
-$ git clone git@github.com:Azure/ResourceModules.git
 ```
 
 ### clone from this repository
